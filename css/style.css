@@ -98,22 +98,28 @@ h1, h2, h3{
     text-transform: uppercase;
     margin-top: 1.5rem;
 }
-.social-links{
+.social-links {
     display: flex;
     margin-top: 3.5rem;
 }
-.social-links li a{
+
+.social-links li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--light-color);
+    background-color: transparent; /* Changed from var(--light-color) to transparent */
     margin-right: 1rem;
     border-radius: .3rem;
     box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.2);
     transition: var(--transition);
 }
-.social-links li a:hover{
+
+.social-links li a:hover {
     opacity: 0.9;
 }
+
 
 /* about */
 .about-left{
