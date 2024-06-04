@@ -394,3 +394,10 @@ h1, h2, h3{
     width: 30px;
     height: 30px;
 }
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))
+    background-color: var(--light-color); /* Adjust the background color as per your website */
+    color: var(--dark-color); /* Adjust the text color as per your website */
+    padding: 20px 0;
+    text-align: center;
+}
