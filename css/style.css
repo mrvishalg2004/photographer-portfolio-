@@ -174,11 +174,15 @@ h1, h2, h3{
 .work-bottom{
     margin-top: 4rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 200px; /* Add gap to adjust the space between work items */
 }
 .work-bottom > div .icon img{
     width: 50px;
     margin: 0 auto 1.7rem auto;
 }
+
 /* portfolio */
 .portfolio-grid > div{
     transition: var(--transition);
@@ -186,6 +190,7 @@ h1, h2, h3{
 .portfolio-grid > div:hover{
     transform: scale(0.9);
 }
+
 
 /* contact */
 #contact{
@@ -445,3 +450,5 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049;
 }
+
+/*demo*/
