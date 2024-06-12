@@ -142,10 +142,16 @@
                         </div>
                         <p class="lead"><i class="fas fa-phone-alt"></i> +91 99216 78988</p>
                         <p class="lead"><i class="fas fa-envelope"></i> rajugiri11883@gmail.com</p>
-                        <form action="">
-                            <input type="text" class="form-control" placeholder="Your name here ...">
-                            <input type="email" class="form-control" placeholder="Your email here">
-                            <input type="submit" class="btn-submit btn" value="Submit">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+                            <input type="hidden" name="access_key" value="38f971f3-b4da-4b22-a087-209469b20261">
+                        
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                             <textarea name="message" placeholder="Message" required></textarea>
+                             <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                              <button type="submit">Submit Form</button>
+                        
                         </form>
                     </div>
 
