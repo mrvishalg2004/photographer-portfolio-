@@ -14,7 +14,7 @@ Welcome to the Photographer Portfolio project! This repository contains the sour
 
 ## Demo
 
-You can view a live demo of the project [here](https://rgcreation.netlify.app/). *(Replace with your actual demo link)*
+You can view a live demo of the project [here](https://rgcreation.netlify.app/). 
 
 ## Features
 
