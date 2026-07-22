@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RG_CREATION - Gallery</title>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <style>
         .gallery-header {
@@ -15,45 +18,61 @@
             background-color: var(--dark-color);
             color: var(--light-color);
         }
+
         .gallery-header h1 {
             color: var(--light-color);
             margin-bottom: 1rem;
         }
+
         .gallery-container {
             padding: 5rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .masonry-grid {
             column-count: 1;
             column-gap: 1.5rem;
         }
-        @media(min-width: 576px){
-            .masonry-grid { column-count: 2; }
+
+        @media(min-width: 576px) {
+            .masonry-grid {
+                column-count: 2;
+            }
         }
-        @media(min-width: 768px){
-            .masonry-grid { column-count: 3; }
+
+        @media(min-width: 768px) {
+            .masonry-grid {
+                column-count: 3;
+            }
         }
-        @media(min-width: 1200px){
-            .masonry-grid { column-count: 4; }
+
+        @media(min-width: 1200px) {
+            .masonry-grid {
+                column-count: 4;
+            }
         }
+
         .masonry-item {
             break-inside: avoid;
             margin-bottom: 1.5rem;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: var(--transition);
             cursor: pointer;
         }
+
         .masonry-item img {
             width: 100%;
             display: block;
             transition: transform 0.5s ease;
         }
+
         .masonry-item:hover img {
             transform: scale(1.05);
         }
+
         .back-btn {
             display: inline-block;
             margin-top: 2rem;
@@ -66,6 +85,7 @@
             letter-spacing: 1px;
             transition: var(--transition);
         }
+
         .back-btn:hover {
             background-color: #f0f0f0;
             transform: translateY(-3px);
@@ -84,15 +104,18 @@
             align-items: center;
             justify-content: center;
         }
+
         #lightbox img {
             max-width: 90%;
             max-height: 90%;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             border-radius: 5px;
         }
+
         #lightbox:target {
             display: flex;
         }
+
         .lightbox-close {
             position: absolute;
             top: 20px;
@@ -105,6 +128,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header class="gallery-header">
@@ -117,104 +141,235 @@
 
     <main class="gallery-container">
         <div class="masonry-grid">
-            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A1801.JPG" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A1819.JPG" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A1842.JPG" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A2920.JPG" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A3088.JPG" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.36 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.37 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.37 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.38 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.40 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.41 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.45 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.48 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.53 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.53 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.54 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.56 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.58 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.59 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.35.03 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.35 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.35 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.36 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.36 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.37 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.37 PM (2).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.37 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.38 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.38 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.39 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.39 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.40 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.00 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.00 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.02 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.03 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.04 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.00 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.00 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.02 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.03 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.04 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.29 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.29 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.30 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.30 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.31 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.32 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.32 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.34 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.34 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.35 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.35 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.36 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 6/WhatsApp Image 2026-07-21 at 8.22.02 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 6/WhatsApp Image 2026-07-21 at 8.22.03 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 6/WhatsApp Image 2026-07-21 at 8.22.04 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.11 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.12 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.13 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.13 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.14 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.14 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.15 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.15 PM (2).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.15 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.16 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.16 PM (2).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.16 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.17 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.17 PM (2).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.17 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.18 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.18 PM (2).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.18 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.19 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.19 PM (2).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.19 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.20 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.20 PM (2).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.20 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.21 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.21 PM (2).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.21 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.31.57 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.31.59 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.00 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.01 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.01 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.03 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.04 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.30.23 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.30.46 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.32.38 PM (1).jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.32.38 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.32.39 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.32.40 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
-            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.33.11 PM.jpeg" alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A1801.JPG" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A1819.JPG" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A1842.JPG" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A2920.JPG" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/Img 1.1 /AO1A3088.JPG" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.36 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.37 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.37 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.38 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.40 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.41 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.45 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 1/WhatsApp Image 2026-07-21 at 8.16.48 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.53 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.53 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.54 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.56 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.58 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.59 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.35.03 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.35 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.35 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.36 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.36 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.37 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.37 PM (2).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.37 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.38 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.38 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.39 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.39 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 2/WhatsApp Image 2026-07-21 at 8.17.40 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.00 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.00 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.02 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.03 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.04 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.00 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.00 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.02 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.03 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 4/WhatsApp Image 2026-07-21 at 8.20.04 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.29 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.29 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.30 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.30 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.31 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.32 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.32 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.34 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.34 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.35 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.35 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.36 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 6/WhatsApp Image 2026-07-21 at 8.22.02 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 6/WhatsApp Image 2026-07-21 at 8.22.03 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 6/WhatsApp Image 2026-07-21 at 8.22.04 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.11 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.12 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.13 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.13 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.14 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.14 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.15 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.15 PM (2).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.15 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.16 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.16 PM (2).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.16 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.17 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.17 PM (2).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.17 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.18 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.18 PM (2).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.18 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.19 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.19 PM (2).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.19 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.20 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.20 PM (2).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.20 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.21 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.21 PM (2).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 7/WhatsApp Image 2026-07-21 at 8.24.21 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.31.57 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.31.59 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.00 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.01 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.01 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.03 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.04 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.30.23 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.30.46 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img
+                    src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.32.38 PM (1).jpeg" alt="Gallery Image"
+                    loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.32.38 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.32.39 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.32.40 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
+            <div class="masonry-item"><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.33.11 PM.jpeg"
+                    alt="Gallery Image" loading="lazy"></div>
         </div>
     </main>
 
@@ -243,34 +398,35 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Footer -->
     <footer class="py-3 text-center">
-        <p>&copy; 2024 Developed By durga roy and Vishal</p>
+        <p>&copy; 2026 Developed By Vishal Golhar</p>
     </footer>
 
     <script>
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
-        
+
         document.querySelectorAll('.masonry-item').forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 const imgSrc = this.querySelector('img').getAttribute('src');
                 lightboxImg.setAttribute('src', imgSrc);
                 lightbox.style.display = 'flex';
             });
         });
 
-        document.querySelector('.lightbox-close').addEventListener('click', function(e) {
+        document.querySelector('.lightbox-close').addEventListener('click', function (e) {
             e.preventDefault();
             lightbox.style.display = 'none';
         });
 
-        lightbox.addEventListener('click', function(e) {
+        lightbox.addEventListener('click', function (e) {
             if (e.target !== lightboxImg) {
                 lightbox.style.display = 'none';
             }
         });
     </script>
 </body>
+
 </html>
