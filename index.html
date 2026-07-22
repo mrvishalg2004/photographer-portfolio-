@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RG_CREATION</title>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
     <!-- header -->
     <header id="header" class="vh-100 flex">
         <div class="container">
             <div class="header-content">
-                <h1>I'm a <br>
-                    <span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000" data-words='["photographer", "videographer", "Cinematography"]'></span>
-                </h1>
-                <div style="display: flex; align-items: center;">
-                    <img src="images/icon.png" alt="icon" style="width: 20px; height: 20px; margin-right: 5px;">
-                    <h3 style="margin: 0;">Raju Giri.............!</h3>
-                </div>
-        
+                <h3 class="greeting">HELLO, MY NAME IS</h3>
+                <h1 class="main-title">RAJU GIRI</h1>
+                <h2 class="sub-title">I'm a
+                    <span class="typewrite highlight" data-loop="yes" data-speed="100" data-delay="2000"
+                        data-words='["Photographer", "Videographer", "Cinematographer"]'></span>
+                </h2>
+
                 <ul class="social-links">
                     <li>
-                        <a href="https://www.instagram.com/rg_creation_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="flex">
-                            <img src="images/insta.png" alt="Instagram" style="width: 20px; height: 20px;">
+                        <a href="https://www.instagram.com/rg_creation_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="flex social-btn" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/raju.giri.9862" class="flex">
-                            <img src="images/facebook.png" alt="Instagram" style="width: 20px; height: 20px;">
+                        <a href="https://www.facebook.com/raju.giri.9862" class="flex social-btn" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                 </ul>
-                
+
+                <div class="header-buttons">
+                    <a href="#work" class="btn-primary"
+                        style="background-color: var(--light-color); color: var(--dark-color); border-color: var(--light-color);">My
+                        Work</a>
+                    <a href="#contact" class="btn-outline">Contact Me</a>
+                </div>
             </div>
         </div>
     </header>
@@ -44,23 +54,31 @@
     <!-- main content -->
     <main>
         <!-- about section -->
-    
+
         <section id="about" class="about py-7">
             <div class="container">
                 <div class="about-content grid">
                     <div class="about-left">
-                        <img src="images/about-pic.png" alt="">
+                        <div class="about-img-wrapper">
+                            <img src="images/about-pic.png" alt="Raju Giri">
+                        </div>
                     </div>
                     <div class="about-right">
                         <div class="title">
                             <h2>About Me</h2>
                         </div>
-                        <p class="lead">Welcome to RG_CREATION..! I'm Raju Giri, a passionate photographer dedicated to capturing life's most beautiful moments. Whether it's a wedding, portrait session, event, or commercial project, I strive to deliver stunning images that tell your unique story.
-                            With a keen eye for detail and a creative approach, I ensure each photo is a timeless piece of art. My client-focused philosophy guarantees a personalized experience, tailored to your specific needs and vision.</p>
-                        <p class="lead">Let’s create memories together. Contact me today to start your photographic journey.</p>
-                        <a href="#work" class="btn-down">
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
+                        <h4 class="about-subtitle">Capturing life's most beautiful moments</h4>
+                        <p class="lead">Welcome to <strong>RG_CREATION</strong>! I'm Raju Giri, a passionate photographer dedicated to
+                            capturing life's most beautiful moments. Whether it's a wedding, portrait session, event, or
+                            commercial project, I strive to deliver stunning images that tell your unique story.</p>
+                        <p class="lead">With a keen eye for detail and a creative approach, I ensure each photo is a timeless piece
+                            of art. My client-focused philosophy guarantees a personalized experience, tailored to your
+                            specific needs and vision.</p>
+                        <p class="lead highlight-text">Let’s create memories together. Contact me today to start your photographic
+                            journey.</p>
+                        <div class="flex" style="justify-content: flex-start; margin-top: 3rem;">
+                            <a href="#work" class="btn-primary">View My Work</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,49 +89,61 @@
         <section id="work" class="vh-100 flex py-7">
             <div class="container">
                 <div class="work-content">
-                    <div class="title">
-                        <h2>what am i doing?</h2>
+                    <div class="title" style="margin-bottom: 5rem; text-align: center;">
+                        <h2 style="font-size: 4.5rem; text-transform: uppercase; letter-spacing: 2px;">My Services</h2>
+                        <p style="color: #ddd; font-size: 1.8rem; font-weight: 300; max-width: 600px; margin: 0 auto;">Dedicated to providing a wide range of professional photography services tailored to your unique story.</p>
                     </div>
-                    <ul class="work-top grid">
-                        <li class="lead"><i class="fas fa-dot-circle"></i> I specialize in capturing the magic and romance of weddings, from intimate moments to grand celebrations. My goal is to create a visual narrative that reflects the love and joy of your special day.</li>
-                        <li class="lead"><i class="fas fa-dot-circle"></i> Whether for individuals, families, or professionals, I craft portraits that highlight your personality and style. Each session is tailored to create images that are both authentic and artistic.</li>
-                        <li class="lead"><i class="fas fa-dot-circle"></i> I provide comprehensive coverage for a variety of events, including corporate functions, parties, and social gatherings. My focus is on documenting the key moments and candid interactions that make each event unique.</li>
-                        <li class="lead"><i class="fas fa-dot-circle"></i> From product shots to branding imagery, I help businesses showcase their offerings with high-quality, professional photographs that enhance their marketing efforts.</li>
-                    </ul>
 
-                    <div class="work-bottom grid">
-                        <div>
-                            <span class="icon"><img src="images/wedding.png" alt="wedding"></span>
-                            <h3>wedding</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-ring"></i>
+                            </div>
+                            <h3>Wedding</h3>
+                            <p>Capturing the magic and romance of your special day, from intimate moments to grand celebrations.</p>
                         </div>
-                        <div>
-                            <span class="icon"><img src="images/baby.png" alt="baby"></span>
-                            <h3>Baby Shoot</h3>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-camera-retro"></i>
+                            </div>
+                            <h3>Pre-Wedding</h3>
+                            <p>Telling the beautiful story of your relationship before you say 'I do' in stunning locations.</p>
                         </div>
-                        <div>
-                            <span class="icon"><img src="images/mother.png" alt="Maternity shoot"></span>
-                            <h3>Maternity shoot</h3>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-portrait"></i>
+                            </div>
+                            <h3>Portraits</h3>
+                            <p>Authentic and artistic portraits that highlight your unique personality and style.</p>
                         </div>
-                        <div>
-                            <span class="icon"><img src="images/prewedding.png" alt="prewedding"></span>
-                            <h3>Prewedding shoot</h3>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <h3>Maternity & Baby</h3>
+                            <p>Beautifully documenting your family's most precious beginnings and milestones.</p>
                         </div>
-                        <div>
-                            <span class="icon"><img src="images/portrait-icon.png" alt="portrait"></span>
-                            <h3>Portrait</h3>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-glass-cheers"></i>
+                            </div>
+                            <h3>Events</h3>
+                            <p>Comprehensive coverage for corporate functions, parties, and social gatherings.</p>
                         </div>
-                        <div>
-                            <span class="icon"><img src="images/landscape-icon.png" alt="landscape"></span>
-                            <h3>Landscape</h3>
-                        </div>
-                        <div>
-                            <span class="icon"><img src="images/family-icon.png" alt="family"></span>
-                            <h3>Family</h3>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>Commercial</h3>
+                            <p>High-quality professional product shots and branding imagery to elevate your business.</p>
                         </div>
                     </div>
-                    <a href="#portfolio" class="btn-down btn-down-white">
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
+
+                    <div class="flex" style="margin-top: 5rem;">
+                        <a href="#portfolio" class="btn-down btn-down-white" style="border: 2px solid var(--light-color); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,13 +161,21 @@
                     </div>
 
                     <div class="portfolio-grid grid">
-                        <div><img src="images/port/1.webp" alt=""></div>
-                        <div><img src="images/port/4.webp" alt=""></div>
-                        <div><img src="images/port/3.webp" alt=""></div>
-                        <div><img src="images/port/5.webp" alt=""></div>
-                        <div><img src="images/port/6.webp" alt=""></div>
-                        <div><img src="images/port/7.webp" alt=""></div>
-                        <div><img src="images/port/2.webp" alt=""></div>
+                        <div><img src="images/New photos/Img 1.1 /AO1A1819.JPG" alt=""></div>
+                        <div><img src="images/New photos/img 8/WhatsApp Image 2026-07-21 at 8.32.03 PM.jpeg" alt="">
+                        </div>
+                        <div><img src="images/New photos/img 9/WhatsApp Image 2026-07-21 at 8.30.46 PM.jpeg" alt="">
+                        </div>
+                        <div><img src="images/New photos/img 10/WhatsApp Image 2026-07-21 at 8.34.53 PM.jpeg" alt="">
+                        </div>
+                        <div><img src="images/New photos/img 5/WhatsApp Image 2026-07-21 at 8.20.31 PM.jpeg" alt="">
+                        </div>
+                        <div><img src="images/New photos/img 3/WhatsApp Image 2026-07-21 at 8.20.04 PM.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex" style="margin-top: 5rem;">
+                        <a href="gallery.html" class="btn-primary">Show More Photos</a>
                     </div>
                 </div>
             </div>
@@ -157,13 +195,13 @@
                         <form action="https://api.web3forms.com/submit" method="POST">
 
                             <input type="hidden" name="access_key" value="38f971f3-b4da-4b22-a087-209469b20261">
-                        
+
                             <input type="text" name="name" placeholder="Name" required>
                             <input type="email" name="email" placeholder="Email" required>
-                             <textarea name="message" placeholder="Message" required></textarea>
-                             <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                              <button type="submit">Submit Form</button>
-                        
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <button type="submit">Submit Form</button>
+
                         </form>
                     </div>
 
@@ -214,7 +252,9 @@
                         <li><a href="#work">Work</a></li>
                         <li><a href="#insta-grid grid">Portfolio</a></li>
                         <li><a href="#contact">Contact Me</a></li>
-                        <li><a href="https://www.instagram.com/rg_creation_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+                        <li><a
+                                href="https://www.instagram.com/rg_creation_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+                        </li>
                         <li><a href="https://www.facebook.com/raju.giri.9862">Facebook</a></li>
                     </ul>
                 </div>
@@ -227,9 +267,10 @@
     <script src="typewriting-master/typewriting.js"></script>
 
     <!-- WhatsApp Chat Button -->
-<a href="https://api.whatsapp.com/send?phone=919921678988&text=Hi%20Raju%2C%20I'm%20interested%20in%20your%20photography%20services." class="whatsapp-button">
-    <img src="images/whatsapp.png" alt="WhatsApp">
-</a>
+    <a href="https://api.whatsapp.com/send?phone=919921678988&text=Hi%20Raju%2C%20I'm%20interested%20in%20your%20photography%20services."
+        class="whatsapp-button">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
 
 
 
@@ -242,4 +283,3 @@
 <!-- Sharayu Meghare -->
 
 </html>
-
